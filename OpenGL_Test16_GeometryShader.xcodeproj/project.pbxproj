@@ -51,6 +51,7 @@
 		AB6E137B26B9323A009350DA /* ModelFragmentShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModelFragmentShader.cpp; sourceTree = "<group>"; };
 		AB6E137C26B93255009350DA /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../../glad/src/glad.c; sourceTree = "<group>"; };
 		AB6E137E26B939CC009350DA /* ModelGeometryShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModelGeometryShader.cpp; sourceTree = "<group>"; };
+		AB6E137F26B944F0009350DA /* CubeGeometryShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CubeGeometryShader.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				AB6E137726B9323A009350DA /* CubeVertexShader.cpp */,
+				AB6E137F26B944F0009350DA /* CubeGeometryShader.cpp */,
 				AB6E137826B9323A009350DA /* CubeFragmentShader.cpp */,
 			);
 			path = CubeShader;

@@ -171,7 +171,8 @@ int main()
     char* headDir = "/Users/haoxiangliang/Desktop/代码草稿/OpenGL/OpenGL_Test16_GeometryShader/OpenGL_Test16_GeometryShader/";
     string p1 = string(headDir) + "CubeShader/CubeVertexShader.cpp";
     string p2 = string(headDir) + "CubeShader/CubeFragmentShader.cpp";
-    Shader cubeShader(p1.c_str(), p2.c_str());
+    string p8 = string(headDir) + "CubeShader/CubeGeometryShader.cpp";
+    Shader cubeShader(p1.c_str(), p2.c_str(), p8.c_str());
     string p3 = string(headDir) + "SkyShader/SkyVertexShader.cpp";
     string p4 = string(headDir) + "SkyShader/SkyFragmentShader.cpp";
     Shader skyboxShader(p3.c_str(), p4.c_str());
