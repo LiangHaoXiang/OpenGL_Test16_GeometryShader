@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AB6E135B26B930E1009350DA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB6E135A26B930E1009350DA /* main.cpp */; };
+		AB6E136326B93108009350DA /* libassimp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6E136226B93108009350DA /* libassimp.dylib */; };
+		AB6E136526B9310D009350DA /* libGLEW.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6E136426B9310D009350DA /* libGLEW.dylib */; };
+		AB6E136726B93111009350DA /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6E136626B93111009350DA /* libglfw.dylib */; };
+		AB6E137026B93222009350DA /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB6E136826B93222009350DA /* Mesh.cpp */; };
+		AB6E137126B93222009350DA /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB6E136926B93222009350DA /* Model.cpp */; };
+		AB6E137226B93222009350DA /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB6E136D26B93222009350DA /* Camera.cpp */; };
+		AB6E137D26B93255009350DA /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = AB6E137C26B93255009350DA /* glad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,25 @@
 /* Begin PBXFileReference section */
 		AB6E135726B930E1009350DA /* OpenGL_Test16_GeometryShader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL_Test16_GeometryShader; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6E135A26B930E1009350DA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AB6E136226B93108009350DA /* libassimp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.dylib; path = ../../../assimp/5.0.1/lib/libassimp.dylib; sourceTree = "<group>"; };
+		AB6E136426B9310D009350DA /* libGLEW.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.dylib; path = ../../../glew/2.2.0_1/lib/libGLEW.dylib; sourceTree = "<group>"; };
+		AB6E136626B93111009350DA /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = ../../../glfw/3.3.4/lib/libglfw.dylib; sourceTree = "<group>"; };
+		AB6E136826B93222009350DA /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		AB6E136926B93222009350DA /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		AB6E136A26B93222009350DA /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		AB6E136B26B93222009350DA /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		AB6E136C26B93222009350DA /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		AB6E136D26B93222009350DA /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		AB6E136E26B93222009350DA /* Mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		AB6E136F26B93222009350DA /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		AB6E137426B9323A009350DA /* SkyVertexShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SkyVertexShader.cpp; sourceTree = "<group>"; };
+		AB6E137526B9323A009350DA /* SkyFragmentShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SkyFragmentShader.cpp; sourceTree = "<group>"; };
+		AB6E137726B9323A009350DA /* CubeVertexShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CubeVertexShader.cpp; sourceTree = "<group>"; };
+		AB6E137826B9323A009350DA /* CubeFragmentShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CubeFragmentShader.cpp; sourceTree = "<group>"; };
+		AB6E137A26B9323A009350DA /* ModelVertexShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModelVertexShader.cpp; sourceTree = "<group>"; };
+		AB6E137B26B9323A009350DA /* ModelFragmentShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModelFragmentShader.cpp; sourceTree = "<group>"; };
+		AB6E137C26B93255009350DA /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../../glad/src/glad.c; sourceTree = "<group>"; };
+		AB6E137E26B939CC009350DA /* ModelGeometryShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModelGeometryShader.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6E136326B93108009350DA /* libassimp.dylib in Frameworks */,
+				AB6E136526B9310D009350DA /* libGLEW.dylib in Frameworks */,
+				AB6E136726B93111009350DA /* libglfw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +72,7 @@
 			children = (
 				AB6E135926B930E1009350DA /* OpenGL_Test16_GeometryShader */,
 				AB6E135826B930E1009350DA /* Products */,
+				AB6E136126B93108009350DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +87,59 @@
 		AB6E135926B930E1009350DA /* OpenGL_Test16_GeometryShader */ = {
 			isa = PBXGroup;
 			children = (
+				AB6E137C26B93255009350DA /* glad.c */,
+				AB6E137626B9323A009350DA /* CubeShader */,
+				AB6E137926B9323A009350DA /* ModelShader */,
+				AB6E137326B9323A009350DA /* SkyShader */,
+				AB6E136D26B93222009350DA /* Camera.cpp */,
+				AB6E136F26B93222009350DA /* Camera.hpp */,
+				AB6E136826B93222009350DA /* Mesh.cpp */,
+				AB6E136E26B93222009350DA /* Mesh.hpp */,
+				AB6E136926B93222009350DA /* Model.cpp */,
+				AB6E136B26B93222009350DA /* Model.hpp */,
+				AB6E136A26B93222009350DA /* Shader.h */,
+				AB6E136C26B93222009350DA /* stb_image.h */,
 				AB6E135A26B930E1009350DA /* main.cpp */,
 			);
 			path = OpenGL_Test16_GeometryShader;
+			sourceTree = "<group>";
+		};
+		AB6E136126B93108009350DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB6E136626B93111009350DA /* libglfw.dylib */,
+				AB6E136426B9310D009350DA /* libGLEW.dylib */,
+				AB6E136226B93108009350DA /* libassimp.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB6E137326B9323A009350DA /* SkyShader */ = {
+			isa = PBXGroup;
+			children = (
+				AB6E137426B9323A009350DA /* SkyVertexShader.cpp */,
+				AB6E137526B9323A009350DA /* SkyFragmentShader.cpp */,
+			);
+			path = SkyShader;
+			sourceTree = "<group>";
+		};
+		AB6E137626B9323A009350DA /* CubeShader */ = {
+			isa = PBXGroup;
+			children = (
+				AB6E137726B9323A009350DA /* CubeVertexShader.cpp */,
+				AB6E137826B9323A009350DA /* CubeFragmentShader.cpp */,
+			);
+			path = CubeShader;
+			sourceTree = "<group>";
+		};
+		AB6E137926B9323A009350DA /* ModelShader */ = {
+			isa = PBXGroup;
+			children = (
+				AB6E137A26B9323A009350DA /* ModelVertexShader.cpp */,
+				AB6E137E26B939CC009350DA /* ModelGeometryShader.cpp */,
+				AB6E137B26B9323A009350DA /* ModelFragmentShader.cpp */,
+			);
+			path = ModelShader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6E137D26B93255009350DA /* glad.c in Sources */,
+				AB6E137226B93222009350DA /* Camera.cpp in Sources */,
+				AB6E137126B93222009350DA /* Model.cpp in Sources */,
+				AB6E137026B93222009350DA /* Mesh.cpp in Sources */,
 				AB6E135B26B930E1009350DA /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +324,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../assimp/5.0.1/include\"",
+					"\"$(SRCROOT)/../../../glad/include\"",
+					"\"$(SRCROOT)/../../../glew/2.2.0_1/include\"",
+					"\"$(SRCROOT)/../../../glfw/3.3.4/include\"",
+					"\"$(SRCROOT)/../../../glm/0.9.9.8/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../glfw/3.3.4/lib\"",
+					"\"$(SRCROOT)/../../../glew/2.2.0_1/lib\"",
+					"\"$(SRCROOT)/../../../assimp/5.0.1/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +344,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../assimp/5.0.1/include\"",
+					"\"$(SRCROOT)/../../../glad/include\"",
+					"\"$(SRCROOT)/../../../glew/2.2.0_1/include\"",
+					"\"$(SRCROOT)/../../../glfw/3.3.4/include\"",
+					"\"$(SRCROOT)/../../../glm/0.9.9.8/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../glfw/3.3.4/lib\"",
+					"\"$(SRCROOT)/../../../glew/2.2.0_1/lib\"",
+					"\"$(SRCROOT)/../../../assimp/5.0.1/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
